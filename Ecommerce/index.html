@@ -1,13 +1,57 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>E-commerce</title>
-    <meta charset="UTF-8" />
-    <link rel="stylesheet" href="index.css" />
-  </head>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Welcome to MyShop</title>
+</head>
+<body>
+  <header>
+    <h1>Welcome to MyShop</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <body style="margin: 0; padding: 0">
-    <!-- Start coding from the lines below for ECOMMERCE TASK -->
-    <!-- to import image from public folder, do it like this = <img src="../public/css.icon.png" alt="CSS image"> -->
-  </body>
+  <main>
+    <section id="home">
+      <h2>Delivering Quality Goods to Your Doorstep</h2>
+      <p>Welcome to MyShop, your one-stop destination for quality products delivered straight to your home.</p>
+      <img src="profile-picture.jpg" alt="Profile Picture" width="200" height="200">
+    </section>
+
+    <section id="products">
+      <h2>Our Products</h2>
+      <ul>
+        <li>Electronics</li>
+        <li>Clothing</li>
+        <li>Home Appliances</li>
+        <li>Beauty &amp; Personal Care</li>
+        <li>Books &amp; Stationery</li>
+      </ul>
+    </section>
+
+    <section id="about">
+      <h2>About Us</h2>
+      <p>MyShop is dedicated to providing a seamless shopping experience to our customers. We strive for customer satisfaction and convenience.</p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+        <input type="submit" value="Submit">
+      </form>
+    </section>
+  </main>
+</body>
 </html>
